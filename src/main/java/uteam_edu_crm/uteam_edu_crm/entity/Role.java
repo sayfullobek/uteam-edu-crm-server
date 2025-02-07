@@ -3,7 +3,7 @@ package uteam_edu_crm.uteam_edu_crm.entity;
 import uteam_edu_crm.uteam_edu_crm.entity.enums.RoleName;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.security.core.GrantedAuthority;
+// import org.springframework.security.core.GrantedAuthority;
 
 @Getter
 @Setter
@@ -11,7 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Role implements GrantedAuthority {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,8 +19,8 @@ public class Role implements GrantedAuthority {
     @Enumerated(EnumType.STRING)
     private RoleName roleName;
 
-    @Override
-    public String getAuthority() {
-        return roleName.toString();
-    }
+    // @Override
+    // public String getAuthority() {
+    //     return roleName.toString();
+    // }
 }

@@ -7,5 +7,7 @@ import uteam_edu_crm.uteam_edu_crm.entity.Country;
 public interface CustomCountry {
     Integer getId();
 
-    String getName();
+    String getNameUz();
+
+    String getNameRu();
 }

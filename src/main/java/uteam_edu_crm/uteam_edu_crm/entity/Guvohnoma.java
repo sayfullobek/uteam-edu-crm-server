@@ -7,7 +7,6 @@ import lombok.*;
 @EqualsAndHashCode(callSuper = true)
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
