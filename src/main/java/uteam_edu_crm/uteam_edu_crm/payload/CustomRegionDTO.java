@@ -1,4 +1,4 @@
-package uteam_edu_crm.uteam_edu_crm.pyload;
+package uteam_edu_crm.uteam_edu_crm.payload;
 
 import lombok.AllArgsConstructor;
 
